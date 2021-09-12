@@ -1,0 +1,7 @@
+requests>=2.25.1
+grpcio>=1.30.0
+protobuf>=3.12.2
+psutil>=5.7.2
+urllib3~=1.26.2
+PySocks~=1.7.1
+wheel>=0.36.2

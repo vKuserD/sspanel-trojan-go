@@ -1,0 +1,13 @@
+[Unit]
+Description=sspanel trojan-go
+After=network.target trojan-go.service
+Wants=network.target trojan-go.service
+
+[Service]
+Type=simple
+#User=nobody
+ExecStart=/opt/sspanel-trojan-go/main.py --config /opt/sspanel-trojan-go/config.ini
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
